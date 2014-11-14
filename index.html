@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/theme/default.css">
+      <title>
+        Workflow / enkel utviklingsmetodikk
+      </title>
+      <style>
+    .reveal * {
+      color: #fff !important;
+      text-shadow: 0px 0px 10px #000 !important;
+    }
+    #nm-logo {
+      border: 0;
+      background: none;
+      box-shadow: 0 0 0 0;
+    }
+  </style>
+
+ </head>
+ <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Workflow / enkel utviklingsmetodikk</h1>
+        <h2>Eirik Morland, Ny Media</h2>
+        <img id="nm-logo" src="nm_logo_ns.png">
+      </section>
+						<section>
+							<h1>Agenda</h1>
+							<ul>
+								<li>Hvorfor ha en utviklingsside?</li>
+								<li>Forskjellige måter å ha en utvklingsside på</li>
+								<li>Mulige fallgruver</li>
+								<li>Tips og triks</li>
+							</ul>
+						</section>
+						<section>
+							<section data-background="//media.giphy.com/media/qcumZdxR0ag80/giphy.gif">
+								<h1>Hvorfor ha en utviklingsside</h1>
+							</section>
+							<section data-background="//media2.giphy.com/media/8J6RCzzl5rPS8/200.gif">
+								<h1>1. Backup</h1>
+							</section>
+							<section data-background="//media.giphy.com/media/Sk9LlXbUx4ExO/giphy.gif">
+								<h1>2. Sikkerhet</h1>
+							</section>
+							<section data-background="//media.giphy.com/media/137EaR4vAOCn1S/giphy.gif">
+								<h1>3. Effektivitet</h1>
+							</section>
+						</section>
+						<section data-background="//media.giphy.com/media/6A8eNbVqyT2Fy/giphy.gif">
+							<h1>Forskjellige måter å ha en utvklingsside på</h1>
+						</section>
+						<section>
+							<h1>Utviklingsside</h1>
+							<ul>
+								<li>Vagrant, som orkerstrerer docker containere i en virtuell maskin, som igjen settes opp med puppet</li>
+								<li>...eller...</li>
+								<li>En mappe for live, en mappe for utvikling</li>
+							</ul>
+						</section>
+						<section>
+							<section data-background="//media.giphy.com/media/n3ew57Ftkjw76/giphy.gif">
+								<h1>Mulige fallgruver</h1>
+							</section>
+							<section>
+								<h1>Delt database</h1>
+							</section>
+							<section>
+								<h1>For gammel database</h1>
+							</section>
+							<section>
+								<img src="rulesrulez.gif">
+							</section>
+						</section>
+						<section>
+							<section>
+								<h1>Tips og triks</h1>
+							</section>
+							<section>
+								<h1>Synkronisering av database</h1>
+								<ul>
+									<li>Backup and migrate</li>
+									<li>phpmyadmin</li>
+									<li>drush</li>
+								</ul>
+							</section>
+							<section>
+								<h1>Nyttige moduler</h1>
+								<ul>
+									<li>Reroute email</li>
+									<li>Environment indicator</li>
+									<li>Stage file proxy</li>
+								</ul>
+							</section>
+							<section>
+								<h1>Praktiske ting</h1>
+								<ul>
+									<li>Endre passord på brukere</li>
+									<li>Motta epost på vegne av andre</li>
+									<li>Endre settings for css og js prosessering i settings.php</li>
+								</ul>
+							</section>
+						</section>
+						<section data-background="//media.giphy.com/media/8BsVo9mp44Gm4/giphy.gif">
+							<h1>Takk for meg</h1>
+						</section>
+    </div>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true
+			});
+		</script>
+
+ </body>
+</html>
